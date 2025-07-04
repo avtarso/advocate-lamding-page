@@ -3,7 +3,7 @@
   YARN_VERSION = "1.22.17"
 
 [build]
-  command = "yarn build"
+  command = "hugo --config site/config.toml --source site --destination dist -v"
   publish = "dist"
 
 [context.deploy-preview]
