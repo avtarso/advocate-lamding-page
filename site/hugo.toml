@@ -10,3 +10,20 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 [params]
 images = ["img/og-image.jpg"]
+
+defaultContentLanguage = "uk"
+defaultContentLanguageInSubdir = true
+
+[languages]
+
+[languages.uk]
+languageName = "Українська"
+languageCode = "uk"
+weight = 1
+contentDir = "site/content"
+
+[languages.ru]
+languageName = "Русский"
+languageCode = "ru"
+weight = 2
+contentDir = "site/content"
