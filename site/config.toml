@@ -1,0 +1,29 @@
+baseurl = "/"
+languageCode = "en-us"
+languageLang = "en"
+title = "Адвокат - Адвокат"
+
+# RSS, categories and tags disabled for an easy start
+# See configuration options for more details: 
+# https://gohugo.io/getting-started/configuration/#toml-configuration
+disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
+[params]
+images = ["img/og-image.jpg"]
+
+defaultContentLanguage = "uk"
+defaultContentLanguageInSubdir = false
+
+[languages]
+
+[languages.uk]
+languageName = "Українська"
+languageCode = "uk"
+weight = 1
+contentDir = "site/content"
+
+[languages.ru]
+languageName = "Русский"
+languageCode = "ru"
+weight = 2
+contentDir = "site/content"

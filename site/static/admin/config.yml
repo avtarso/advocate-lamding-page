@@ -95,7 +95,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Translation Key, name: translationKey, widget: string, default: "footer"}
           - {label: Title, name: title, widget: string}
           - {label: Blurb, name: blurb, widget: text}
-      - file: "site/hugo.toml"
+      - file: "site/config.toml"
         label: Hugo Config
         name: config
         editor:
