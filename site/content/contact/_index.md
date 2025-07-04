@@ -1,6 +1,6 @@
 ---
 title: "Контакти"
-logo: "/img/logo.svg"
+# logo: "/img/logo.svg"
 contact_entries:
   - heading: Адреса
     text: "49000, м. Дніпро, проспект мануйлівський 73"
