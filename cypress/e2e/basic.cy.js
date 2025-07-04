@@ -22,7 +22,7 @@ describe("empty spec", () => {
   it("navigates to the blog page", () => {
     cy.get('a[href="/post"]').eq(0).click();
     cy.url().should("include", "/post");
-    cy.get("h1").contains(/Latest Stories/i);
+    cy.get("h1").contains(/Останні справи/i);
   });
 });
 

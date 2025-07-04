@@ -10,7 +10,7 @@ export default class PostPreview extends React.Component {
       <h1 className="f2 lh-title b mb3">{ entry.getIn(["data", "title"])}</h1>
       <div className="flex justify-between grey-3">
         <p>{ format(entry.getIn(["data", "date"]), "iii, MMM d, yyyy") }</p>
-        <p>Read in x minutes</p>
+        <p>Розрахункова кількість хвилин на читання x</p>
       </div>
       <div className="cms mw6">
         <p>{ entry.getIn(["data", "description"]) }</p>
