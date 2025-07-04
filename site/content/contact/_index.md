@@ -1,19 +1,15 @@
 ---
-title: "Contact"
+title: "Контакти"
 logo: "/img/logo.svg"
 contact_entries:
-  - heading: Location
-    text: "3153 Lynn Avenue, South San Francisco, California 94080"
-  - heading: Working hours
-    text: "Monday – Saturday: 9AM – 7PM We’re closed on Sundays"
+  - heading: Адреса
+    text: "49000, м. Дніпро, проспект мануйлівський 73"
+  - heading: Часи роботи офіса
+    text: "ПН-ПТ 9 - 18, інший час за домовленністю"
 ---
 
-We’d love to get in touch with you and hear your ideas and
-questions. We strive to grow and improve constantly and your feedback
-is valuable for us.
+Ми чекаемо на ваше звернення в робочий час
 
 <h3 class="f4 b lh-title mb2">How can I get…?</h3>
 
-You can also use the form below for any inquiries about coffee
-availability, monthly subscriptions and scheduling a 1-on-1 session
-with our baristas. Don’t be shy, drop us a line!
+У будь який час ви можете залишити нам повідомлення ми зв'жемося з вами у найближчий час
