@@ -1,7 +1,7 @@
 baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
-title = "Kaldi"
+title = "Адвокат - Адвокат"
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details: 
@@ -12,7 +12,7 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 images = ["img/og-image.jpg"]
 
 defaultContentLanguage = "uk"
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 
 [languages]
 
