@@ -1,7 +1,7 @@
 baseURL = "/"
 defaultContentLanguage = "uk"
 defaultContentLanguageInSubdir = false 
-title = "Kaldi"
+title = "Криминальный адвокат"
 languageCode = "uk"
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
