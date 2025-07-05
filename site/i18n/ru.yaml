@@ -18,3 +18,13 @@
   translation: "Псоледние дела"
 - id: work_schedule
   translation: "График работы"
+- id: fill_form
+  translation: "Для отправки сообщения заполните форму"
+- id: name_form
+  translation: "Ваше имя"
+- id: email_form
+  translation: "Ваша электронная почта"
+- id: email_message
+  translation: "Ваше сообщение"
+- id: send_form
+  translation: "Отправить"
