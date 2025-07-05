@@ -11,6 +11,6 @@ contact_entries:
 
 Мы ждем Ваше обращение в рабочее время
 
-<h3 class="f4 b lh-title mb2">How can I get…?</h3>
+<!-- <h3 class="f4 b lh-title mb2">How can I get…?</h3> -->
 
 В любое время вы можете оставить сообщение и мы свяжемся с вами в ближайшее время
