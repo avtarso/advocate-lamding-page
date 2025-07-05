@@ -40,6 +40,7 @@
 			{{ if $translated }}
 			  <a href="{{ $translated.RelPermalink }}">{{ .LanguageName }}</a>
 			{{ else }}
+			  {{/* fallback на корень языка */}}
 			  <a href="{{ .Lang | relLangURL }}">{{ .LanguageName }}</a>
 			{{ end }}
 	  

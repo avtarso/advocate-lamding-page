@@ -1,6 +1,6 @@
 baseURL = "/"
 defaultContentLanguage = "uk"
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false 
 title = "Kaldi"
 languageCode = "uk"
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
@@ -11,11 +11,13 @@ images = ["img/og-image.jpg"]
 [languages]
 
 [languages.uk]
-  languageName = "Українська"
+  languageName = "UA"
   weight = 1
   contentDir = "content/uk"
+  languageCode = "uk"
 
 [languages.ru]
-  languageName = "Русский"
+  languageName = "RU"
   weight = 2
   contentDir = "content/ru"
+  languageCode = "ru"
