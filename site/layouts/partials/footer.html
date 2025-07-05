@@ -13,23 +13,46 @@
 		</div> -->
 
 		<div class="flex-ns justify-between">
-
+			
 			<div>
 				<h3 class="f4 b lh-title mb1 primary">{{ i18n "lawyers" }}</h3>
 				<ul class="mb3">
-				  <li><a href="/" class="link">{{ i18n "home" }}</a></li>
-				  <li><a href="/products" class="link">{{ i18n "products" }}</a></li>
-				  <li><a href="/values" class="link">{{ i18n "values" }}</a></li>
-				  <li><a href="/post" class="link">{{ i18n "blog" }}</a></li>
-				  <li><a href="/contact" class="link">{{ i18n "contact" }}</a></li>
+				  <li><a href="{{ "/" | relLangURL }}" class="link">{{ i18n "home" }}</a></li>
+				  <li><a href="{{ "products" | relLangURL }}" class="link">{{ i18n "products" }}</a></li>
+				  <li><a href="{{ "values" | relLangURL }}" class="link">{{ i18n "values" }}</a></li>
+				  <li><a href="{{ "post" | relLangURL }}" class="link">{{ i18n "blog" }}</a></li>
+				  <li><a href="{{ "contact" | relLangURL }}" class="link">{{ i18n "contact" }}</a></li>
+					<!-- Language Switcher as menu item -->
+					{{ range .Site.Languages }}
+						{{ if ne .Lang $.Site.Language.Lang }}
+
+							{{ $targetLang := .Lang }}
+							{{ $translated := "" }}
+
+							{{ range $.Translations }}
+								{{ if eq .Lang $targetLang }}
+									{{ $translated = . }}
+								{{ end }}
+							{{ end }}
+
+					<li>
+							{{ if $translated }}
+								<a href="{{ $translated.RelPermalink }}" class="link">{{ .LanguageName }}</a>
+							{{ else }}
+								<a href="{{ .Lang | relLangURL }}" class="link">{{ .LanguageName }}</a>
+							{{ end }}
+					</li>
+
+						{{ end }}
+					{{ end }}
 				</ul>
 			</div>
-
+			
 			<div>
 				<h3 class="f4 b lh-title mb1 primary">{{ i18n "about_us" }}</h3>
 				<ul class="mb3">
-				  <li><a href="/post/jamaica-blue/" class="link">{{ i18n "latest_cases" }}</a></li>
-				  <li><a href="/contact" class="link">{{ i18n "work_schedule" }}</a></li>
+				  <li><a href="{{ "/post/jamaica-blue/" | relLangURL }}" class="link">{{ i18n "latest_cases" }}</a></li>
+				  <li><a href="{{ "/contact" | relLangURL }}" class="link">{{ i18n "work_schedule" }}</a></li>
 				</ul>
 			</div>
 
