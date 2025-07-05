@@ -1,8 +1,20 @@
 - id: products
-  translation: "Продукты"
+  translation: "Наши услуги"
 - id: values
-  translation: "Ценности"
+  translation: "Наши ценности"
+- id: lawyers
+  translation: "Адвокаты"
+- id: about_us
+  translation: "Еще о нас"
+- id: social_media
+  translation: "Социальные сети"
+- id: home
+  translation: "Главная"
 - id: blog
   translation: "Блог"
 - id: contact
-  translation: "Контакт"
+  translation: "Контакты"
+- id: latest_cases
+  translation: "Псоледние дела"
+- id: work_schedule
+  translation: "График работы"
