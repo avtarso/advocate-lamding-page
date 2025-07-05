@@ -1,0 +1,8 @@
+- id: products
+  translation: "Продукты"
+- id: values
+  translation: "Ценности"
+- id: blog
+  translation: "Блог"
+- id: contact
+  translation: "Контакт"

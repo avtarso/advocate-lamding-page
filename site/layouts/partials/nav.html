@@ -15,14 +15,11 @@
 	</div>
 
 	<ul class="flex b grey-3 nav-menu">
-		<li><a href="/products" class="pa3 no-underline db">Products</a></li>
-
-		<li><a href="/values" class="pa3 no-underline db">Values</a></li>
-
-		<li><a href="/post" class="pa3 no-underline db">Blog</a></li>
-
-		<li><a href="/contact" class="pa3 no-underline db">Contact</a></li>
-	</ul>
+		<li><a href="{{ "products" | relLangURL }}" class="pa3 no-underline db">{{ i18n "products" }}</a></li>
+		<li><a href="{{ "values" | relLangURL }}" class="pa3 no-underline db">{{ i18n "values" }}</a></li>
+		<li><a href="{{ "post" | relLangURL }}" class="pa3 no-underline db">{{ i18n "blog" }}</a></li>
+		<li><a href="{{ "contact" | relLangURL }}" class="pa3 no-underline db">{{ i18n "contact" }}</a></li>
+	  </ul>
 
 	<nav class="language-switcher">
 		{{ range .Site.Languages }}
