@@ -15,7 +15,7 @@
 - id: contact
   translation: "Контакты"
 - id: latest_cases
-  translation: "Псоледние дела"
+  translation: "Последние дела"
 - id: work_schedule
   translation: "График работы"
 - id: fill_form
