@@ -27,8 +27,20 @@
     </fieldset>
     <!-- Button -->
     <div class="tc">
+      <input type="hidden" name="lang" id="lang" value="{{ .Lang }}">
       <button type="submit" class="btn w-100 w-auto-ns raise">{{ i18n "send_form" }}</button>
     </div>
   </form>
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.forms["contact"];
+    if (form) {
+      const lang = document.getElementById("lang")?.value || "uk";
+      form.setAttribute("action", `/${lang}/thank-you/`);
+    }
+  });
+</script>
+
 
