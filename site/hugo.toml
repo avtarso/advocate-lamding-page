@@ -1,12 +1,21 @@
-baseurl = "/"
-languageCode = "en-us"
-languageLang = "en"
+baseURL = "/"
+defaultContentLanguage = "uk"
+defaultContentLanguageInSubdir = true
 title = "Kaldi"
-
-# RSS, categories and tags disabled for an easy start
-# See configuration options for more details: 
-# https://gohugo.io/getting-started/configuration/#toml-configuration
+languageCode = "uk"
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 [params]
 images = ["img/og-image.jpg"]
+
+[languages]
+
+[languages.uk]
+  languageName = "Українська"
+  weight = 1
+  contentDir = "content/uk"
+
+[languages.ru]
+  languageName = "Русский"
+  weight = 2
+  contentDir = "content/ru"
