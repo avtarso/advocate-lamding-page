@@ -1,5 +1,6 @@
 ---
 title: Адвокат та Адвокат UK
+translationKey: "home"
 subtitle: Ми по-справжньому турбуємося про наших клієнтів
 image: /img/home-jumbotron.jpg
 blurb:

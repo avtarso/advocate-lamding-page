@@ -27,9 +27,14 @@
 	<nav class="language-switcher">
 		{{ range .Site.Languages }}
 		  {{ if ne .Lang $.Site.Language.Lang }}
-			<a href="{{ .Lang | relLangURL }}">{{ .LanguageName }}</a>
+			{{ $translated := index $.Translations .Lang }}
+			{{ if $translated }}
+			  <a href="{{ $translated.RelPermalink }}">{{ .LanguageName }}</a>
+			{{ else }}
+			  <a href="{{ .Lang | relLangURL }}">{{ .LanguageName }}</a>
+			{{ end }}
 		  {{ end }}
 		{{ end }}
-	  </nav>
+	</nav>
 
 </nav>
