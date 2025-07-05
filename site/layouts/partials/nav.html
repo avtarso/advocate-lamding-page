@@ -24,4 +24,12 @@
 		<li><a href="/contact" class="pa3 no-underline db">Contact</a></li>
 	</ul>
 
+	<nav class="language-switcher">
+		{{ range .Site.Languages }}
+		  {{ if ne .Lang $.Site.Language.Lang }}
+			<a href="{{ .Lang | relLangURL }}">{{ .LanguageName }}</a>
+		  {{ end }}
+		{{ end }}
+	  </nav>
+
 </nav>
