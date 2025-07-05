@@ -1,5 +1,6 @@
 ---
 title: "Контакты"
+translationKey: "contact"
 # logo: "/img/logo.svg"
 contact_entries:
   - heading: Адрес
