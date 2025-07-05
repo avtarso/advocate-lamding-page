@@ -1,48 +1,48 @@
 <nav data-nav class="flex justify-between items-center center bg-white divider-grey relative">
 
-	<!-- Logo -->
-	<a href="/" class="pa3 db mr4 h-100 w3 flex-none"> Адвокат і Адвокат
-		<!-- <img src="/img/logo.svg" alt="Kaldi logo" class="br0 db mb0 w-100"/> -->
-	</a>
+  <!-- Logo -->
+  <a href="/" class="pa3 db mr4 h-100 w3 flex-none"> Адвокат і Адвокат
+    <!-- <img src="/img/logo.svg" alt="Kaldi logo" class="br0 db mb0 w-100"/> -->
+  </a>
 
-	<!-- Primary Nav -->
-	<div data-mobile-menu class="mobile-menu-container">
-		<svg viewBox="0 0 100 80" width="40" height="25" class="mobile-menu-icon">
-			<rect class="menu-icon-top mobile-menu-inner" width="100" height="8"></rect>
-			<rect class="menu-icon-middle mobile-menu-inner" y="30" width="100" height="8"></rect>
-			<rect class="menu-icon-bottom mobile-menu-inner" y="60" width="100" height="8"></rect>
-		</svg>
-	</div>
+  <!-- Primary Nav -->
+  <div data-mobile-menu class="mobile-menu-container">
+    <svg viewBox="0 0 100 80" width="40" height="25" class="mobile-menu-icon">
+      <rect class="menu-icon-top mobile-menu-inner" width="100" height="8"></rect>
+      <rect class="menu-icon-middle mobile-menu-inner" y="30" width="100" height="8"></rect>
+      <rect class="menu-icon-bottom mobile-menu-inner" y="60" width="100" height="8"></rect>
+    </svg>
+  </div>
 
-	<ul class="flex b grey-3 nav-menu">
-		<li><a href="{{ "products" | relLangURL }}" class="pa3 no-underline db">{{ i18n "products" }}</a></li>
-		<li><a href="{{ "values" | relLangURL }}" class="pa3 no-underline db">{{ i18n "values" }}</a></li>
-		<li><a href="{{ "post" | relLangURL }}" class="pa3 no-underline db">{{ i18n "blog" }}</a></li>
-		<li><a href="{{ "contact" | relLangURL }}" class="pa3 no-underline db">{{ i18n "contact" }}</a></li>
-	  </ul>
+  <ul class="flex b grey-3 nav-menu">
+    <li><a href="{{ "products" | relLangURL }}" class="pa3 no-underline db">{{ i18n "products" }}</a></li>
+    <li><a href="{{ "values" | relLangURL }}" class="pa3 no-underline db">{{ i18n "values" }}</a></li>
+    <li><a href="{{ "post" | relLangURL }}" class="pa3 no-underline db">{{ i18n "blog" }}</a></li>
+    <li><a href="{{ "contact" | relLangURL }}" class="pa3 no-underline db">{{ i18n "contact" }}</a></li>
 
-	<nav class="language-switcher">
-		{{ range .Site.Languages }}
-		  {{ if ne .Lang $.Site.Language.Lang }}
-	  
-			{{ $targetLang := .Lang }}
-			{{ $translated := "" }}
-	  
-			{{ range $.Translations }}
-			  {{ if eq .Lang $targetLang }}
-				{{ $translated = . }}
-			  {{ end }}
-			{{ end }}
-	  
-			{{ if $translated }}
-			  <a href="{{ $translated.RelPermalink }}">{{ .LanguageName }}</a>
-			{{ else }}
-			  {{/* fallback на корень языка */}}
-			  <a href="{{ .Lang | relLangURL }}">{{ .LanguageName }}</a>
-			{{ end }}
-	  
-		  {{ end }}
-		{{ end }}
-	  </nav>
+    <!-- Language Switcher as menu item -->
+    {{ range .Site.Languages }}
+      {{ if ne .Lang $.Site.Language.Lang }}
+
+        {{ $targetLang := .Lang }}
+        {{ $translated := "" }}
+
+        {{ range $.Translations }}
+          {{ if eq .Lang $targetLang }}
+            {{ $translated = . }}
+          {{ end }}
+        {{ end }}
+
+        <li>
+          {{ if $translated }}
+            <a href="{{ $translated.RelPermalink }}" class="pa3 no-underline db">{{ .LanguageName }}</a>
+          {{ else }}
+            <a href="{{ .Lang | relLangURL }}" class="pa3 no-underline db">{{ .LanguageName }}</a>
+          {{ end }}
+        </li>
+
+      {{ end }}
+    {{ end }}
+  </ul>
 
 </nav>

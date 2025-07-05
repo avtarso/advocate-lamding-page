@@ -1,20 +1,20 @@
 ---
-title: Адвокат та Адвокат RU
+title: Адвокат и Адвокат
 translationKey: "home"
-subtitle: Ми по-справжньому турбуємося про наших клієнтів
+subtitle: Мы по настоящему заботимся о наших клиентах
 image: /img/home-jumbotron.jpg
 blurb:
-  heading: Чому ми?
-  text: Тому що ... перше, друге, третє, четверте
+  heading: Почему мы?
+  text: Потому что... первое, второе, третье, четвертое
 intro:
-  heading: Що ми пропонуємо
-  text: Широкий спектр якісних юридичних послуг
+  heading: Что мы предлагаем
+  text: Широкий спектр качественных юридических услуг
 products:
   - image: img/illustrations-coffee.svg
     text: Техт 1
   - image: /img/illustrations-coffee-gear.svg
-    text: Тескт 2
+    text: Текст 2
 values:
-  heading: Наші цінності
-  text: Вірішення проблеми клієнта - наш приоритет
+  heading: Наши ценности
+  text: Решение проблемы клиета - наш приоритет
 ---

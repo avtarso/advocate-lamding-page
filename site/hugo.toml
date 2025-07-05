@@ -17,7 +17,7 @@ images = ["img/og-image.jpg"]
   languageCode = "uk"
 
 [languages.ru]
-  languageName = "RU"
+  languageName = "ru"
   weight = 2
   contentDir = "content/ru"
   languageCode = "ru"
