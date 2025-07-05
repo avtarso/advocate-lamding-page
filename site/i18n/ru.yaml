@@ -28,3 +28,7 @@
   translation: "Ваше сообщение"
 - id: send_form
   translation: "Отправить"
+- id: thank_you
+  translation: "Спасибо за обращение!"
+- id: thank_you_message
+  translation: "Ваше сообщение отправлено и мы свяжемся с вами в ближайшее время."
