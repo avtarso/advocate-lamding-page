@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: add_contact_form
+  branch: blog-ru-ua
 
 media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
@@ -164,3 +164,29 @@ collections: # A list of collections the CMS should be able to edit
                 name: images
                 widget: list
                 field: { label: Image, name: image, widget: image }
+  - name: "blog_ua"
+    label: "Блог (укр)"
+    folder: "site/content/uk/post"
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
+    create: true
+    fields:
+      - {label: "Заголовок", name: "title", widget: "string"}
+      - {label: "Дата публикації", name: "date", widget: "datetime"}
+      - {label: "Опис", name: "description", widget: "text", required: false}
+      - {label: "Зображення", name: "image", widget: "image", required: false}
+      - {label: "Тіло", name: "body", widget: "markdown"}
+  - name: "blog_ru"
+    label: "Блог (рус)"
+    folder: "site/content/ru/post"
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
+    create: true
+    fields:
+      - {label: "Заголовок", name: "title", widget: "string"}
+      - {label: "Дата публикации", name: "date", widget: "datetime"}
+      - {label: "Описание", name: "description", widget: "text", required: false}
+      - {label: "Изображение", name: "image", widget: "image", required: false}
+      - {label: "Содержимое", name: "body", widget: "markdown"}
